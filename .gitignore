@@ -2,7 +2,7 @@
 
 #django SECRET_KEY
 src/mysite/settings_secret.py
-
+src/mysite/settings/base_secret.py
 
 
 # for the rest:

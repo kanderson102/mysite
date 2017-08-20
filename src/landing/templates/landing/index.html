@@ -3,6 +3,7 @@
 
 {% block styles %}
 <link rel="stylesheet" href="{% static 'css/index.css'%}" xmlns:style="http://www.w3.org/1999/xhtml"/>
+<script type="text/javascript" src="{% static 'js/smooth-scroll.js' %}"></script>
 {% endblock %}
 
 {% block index %}
@@ -31,15 +32,16 @@
 
 
 <div id="About" class="container-fluid about-me">
-    <div class="row">
-        <div class="col-sm-6">
+    <div class="row" style="padding-left:50px; padding-right: 50px;">
+        <div class="col-md-5">
             <div class="prof-pic">
-                <img title="Woah!" class="pic1" src="{% static 'img/self.jpg' %}"><img class="pic2" src="{% static 'img/me-tux.jpg' %}">
+                <img title="Woah!" class="pic1" src="{% static 'img/self.jpg' %}">
+                <img class="pic2" src="{% static 'img/me-tux.jpg' %}">
 
             </div>
         </div>
-
-        <div class="col-sm-6">
+</br>
+        <div class="col-lg-7">
 
             <h1>Hello!</h1>
             <h3>Would it be weird if that wasn't a picture of me?</h3>
@@ -47,7 +49,10 @@
             <p class="lead">Yes. But I've been living in Austin long enough to know that being
                 weird is often encouraged. Especially after moving here from Florida. Yet, ironically, I had never
                 heard of the state's "strange" stereotype until moving out of it. I wouldn't say this off-beat
-                background led me to my current path, but I'm sure it helped.
+                background led me to my current path, but I'm sure it helped.</p>
+        </div>
+
+        <div class="col-sm-12">
             <p class="lead">In the summer of 2016 I began building a <a href="#Projects"><b>tiny house on
                 wheels</b></a>
                 with my friend while studying independently to become a software engineer - <a
@@ -63,9 +68,16 @@
                 yoga and meditation in my free time and stay up too late when I don't have free time. Hiking to
                 hidden
                 water spots and travelling to see family has also been very rewarding since moving to Austin in the
-                Fall of 2014.</p>
+                Fall of 2014.</p></br>
+            <h2>My Goal for this blog...</h2>
+            <p class="lead">Is to teach and illustrate what I've learned. Whether it's a how-to guide or a story or
+                otherwise,
+                the narrative will be rich and informative. I'd like to help those just getting started in a format that
+                would have been useful for the beginner that's still inside of me.</p>
         </div>
     </div>
+</div>
+</div>
 </div>
 
 
@@ -79,15 +91,16 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5" style="padding:20px">
                 <img title="Ready For Siding" src="{% static 'img/tiny-house.jpg' %}">
-                <h3 class="widget-title">The (Tiny) House</h3>
+                <h2 class="widget-title">The (Tiny) House</h2>
                 <p class="lead">What started as a desire to live minimally has manifested into reality</p>
             </div>
-            <div class="col-md-5 col-md-offset-2">
+            <div class="col-md-5 col-md-offset-2 text-center" style="padding:20px">
                 <img title="$pip install cowsay" src="{% static 'img/cowsay.png' %}">
-                <h3 class="widget-title">Programming</h3>
-                <p class="lead">This minimalistic tint started by the THOW has bled into my path towards
+                <h2 class="widget-title">Programming</h2>
+                <p class="lead" style="text-align:justify">This minimalistic tint started by the THOW has bled into my
+                    path towards
                     programming,
                     and Python
                     has fulfilled this essence to the fullest with its simple syntax and powerful libraries.</p>
@@ -113,7 +126,8 @@
         <div class="row">
             <div class="col-md-12 education-heading">
                 <h1 class="title">Formal Education</h1>
-                <p class=" subtitle">My formidable years have been spent learning from books, professors, and
+                <p class="subtitle" style="text-align:center">My formidable years have been spent learning from books,
+                    professors, and
                     mentors.</p>
             </div>
         </div>
@@ -136,7 +150,8 @@
         </div>
     </div>
 </div>
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
-
+<div class="container" style="height = 100%; text-align=center">
+    <h1>A Call To Action</h1>
+</div>
 {% endblock %}

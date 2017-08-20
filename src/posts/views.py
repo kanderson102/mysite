@@ -23,7 +23,7 @@ def project_list(request):
             Q(user__last_name__icontains=query)
         ).distinct()
 
-    paginator = Paginator(queryset_list, 1)  # Show n contacts per page
+    paginator = Paginator(queryset_list, 10)  # Show n contacts per page
     page = request.GET.get('page')
     try:
         queryset = paginator.page(page)
